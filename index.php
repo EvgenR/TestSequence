@@ -97,8 +97,7 @@ class Main{
 
     /**
      * Точка входа
-     * принимает строку для обработки
-     * @param type $str
+     * принимает строку для обработки из аргументов командной строки    
      */
     static public function run()
     {
@@ -112,7 +111,7 @@ class Main{
             $s->get($argv[1]);
             $s->checkArray();
             $s->echoType();
-            echo 'OK';
+            echo 'OK'.PHP_EOL;
                         
         } catch (\Exception $e) {
             echo $e->getMessage().PHP_EOL;
